@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable exercise</title>
+  </head>
+  <body>
+    <h2>Cart quantity</h2>
+    <button
+      onclick="console.log(
+      `Cart quantity: ${quantity}`
+    );"
+    >
+      Show Quantity
+    </button>
+    <button
+      onclick="console.log(
+      `Cart quantity: ${addToCart}`
+    );"
+    >
+      Add to Cart
+    </button>
+    <button
+      onclick="console.log(
+      `Cart quantity: ${addTwoCart}`
+    );"
+    >
+      +2
+    </button>
+    <button
+      onclick="console.log(
+      `Cart quantity: ${addThreeCart}`
+    );"
+    >
+      +3
+    </button>
+    <button
+      onclick="
+      console.log('Cart is reset');
+      console.log(
+      `Cart quantity: ${removeCart}`
+    );"
+    >
+      Reset Cart
+    </button>
+
+    <script>
+      let quantity = 0;
+
+      let addToCart = 1;
+
+      let addTwoCart = addToCart + 2;
+
+      let addThreeCart = addTwoCart + 3;
+
+      let removeCart = 0;
+    </script>
+  </body>
+</html>

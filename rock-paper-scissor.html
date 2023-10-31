@@ -1,0 +1,36 @@
+<!--
+1. When we click computer randomly select a move
+2. Compare the moves to  get the result
+3. Display the result in popup-->
+
+<!-- logical operators  lets us combile Boolean value  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <h1>Rock Paper Scissor</h1>
+    <!-- get 0 and 1 with the help of Math.random() -->
+    <!-- 1/3 = rock, between 1/3 and 2/3 = paper, between 2/3 and 1 = scissor -->
+    <button
+      onclick="
+        const randomNumber =  Math.random();
+      if (randomNumber >= 0 && randomNumber < 1/3){
+        console.log('Rock');
+      } else if (randomNumber >= 1/3 && randomNumber < 2/3){
+        console.log('Paper'); }
+        else if (randomNumber < 1 && randomNumber > 2/3){
+        console.log('Scissor');
+        }"
+    >
+      Rock
+    </button>
+    <button>Paper</button>
+    <button>Scissor</button>
+    <p><a href="">Click here</a> to see the final result</p>
+    <script></script>
+  </body>
+</html>
