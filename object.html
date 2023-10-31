@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      // const product = {
+      //   name: "kiran",
+      //   age: 21,
+      // };
+      // console.log(product);
+      // console.log(product.name);
+      // delete product.age;
+      // console.log(product);
+
+      const product2 = {
+        name: "shirts",
+        // ["delivery - time"]: "10pm",
+        "delivery - time": "10pm", //codewill still work
+
+        // nested object
+        rating: {
+          stars: 4.5,
+          count: 87,
+        },
+        // function
+        fun: function function1() {
+          console.log("function inside object");
+        },
+      };
+      // dot notation
+      console.log(product2);
+      console.log(product2.name);
+      // bracket notation
+      console.log(product2["name"]);
+      console.log(product2["delivery - time"]);
+
+      // for nested object
+      console.log(product2.rating);
+      console.log(product2.rating.stars);
+
+      // for function inside object
+      console.log(product2.fun());
+
+      // convert javascript to JSON
+      console.log(JSON.stringify(product2));
+
+      // convert JSON to javascript
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));
+    </script>
+  </body>
+</html>
