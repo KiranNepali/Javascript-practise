@@ -34,12 +34,50 @@
 
       // logical operators
       // and operator - check if both side is true
-      console.log(true && true);
-      console.log(0.2 >= 0 && 0.2 < 1 / 3);
-      // or operator - check if one side is true
-      console.log(true || false);
-      // not operator - change the value to false or true respectively
-      console.log(!true);
+      // console.log(true && true);
+      // console.log(0.2 >= 0 && 0.2 < 1 / 3);
+      // // or operator - check if one side is true
+      // console.log(true || false);
+      // // not operator - change the value to false or true respectively
+      // console.log(!true);
+
+      //some other if value truthy and falsy:
+      // falsy value  = fasle, 0, '', Nan, undefined, null except these all truthy
+      // if (0) {
+      //   console.log("truthy");
+      // }
+
+      // const cartQuantity = 5;
+      // // cartQuantity > 0 and cartQuantity is same
+      // if (cartQuantity) {
+      //   console.log("cart has products");
+      // }
+
+      // // flip to true because 0 is falsy value
+      // console.log(!0);
+
+      // // result is NAN
+      // console.log("text" / 5);
+
+      // // result undefined
+      // // cant use with const
+      // // const variable1 = undefined; only if this is done
+      // let variable1;
+      // console.log(variable1);
+
+      // ternary operators
+      //same like if else statement
+      const result = true ? "truthy" : "falsy";
+      console.log(result);
+      // guard operator &&
+      false && console.log("hello");
+      const message = true && "hello";
+      console.log(message);
+      // default operator
+      const curency = "EUR" || "USD";
+      console.log(curency);
+      const curenc1 = undefined || "USD";
+      console.log(curency1);
     </script>
   </body>
 </html>
