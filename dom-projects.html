@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM projects</title>
     <style>
-      .js-sub-btn{
-       background-color: black;
+      body{
+        font-family: 'Arial';
+        font-size: bold;
       }
-      .js-sub-btn:hover{
-        background-color: rgb(63, 62, 62);
+
+      .sub-btn{
+         background-color: black;
+         color: white;
+         margin-bottom: 3 rem;
+      }
+      .is-subscribed{
+       background-color: #d7cccc;
+       color: rgb(23, 22, 22);
+       border-radius: 5px;
+       cursor: pointer;
+    
       }
     </style>   
   </head>
@@ -18,7 +29,7 @@
     <p>Youtube subscribe button</p>
     <button onclick="subscribe()
     "
-    class="js-btn-sub">Subscribe</button>
+    class="js-btn-sub sub-btn">Subscribe</button>
     
     <p>Rock paper scissor</p>
     <a href="./dom-rock-paper-scissor.html">Click here</a>
@@ -39,21 +50,24 @@
 
     </body>
     <script>
-      // convert value into string 
-      String(25);
+    //   // convert value into string 
+    //   String(25);
 
-      // automatically convert num 
-      console.log  ('25' - 5);
-    //  adding works differently 
-    console.log('25' + 5);
-    //dont do math using like this use function
+    //   // automatically convert num 
+    //   console.log  ('25' - 5);
+    // //  adding works differently 
+    // console.log('25' + 5);
+    // //dont do math using like this use function
 
       function subscribe(){
         const btnElement =  (document.querySelector('.js-btn-sub'))
+        
         if(btnElement.innerText === 'Subscribe'){
-        btnElement.innerHTML = 'Subscribed'
+          btnElement.innerHTML = 'Subscribed';
+          btnElement.classList.add('is-subscribed');
         }else{
-         btnElement.innerHTML = 'Subscribe'
+          btnElement.innerHTML = 'Subscribe';
+          btnElement.classList.remove('is-subscribed');
     }
       }
 
