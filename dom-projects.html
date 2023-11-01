@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM projects</title>
+    <style>
+      .js-sub-btn{
+       background-color: black;
+      }
+      .js-sub-btn:hover{
+        background-color: rgb(63, 62, 62);
+      }
+    </style>   
+  </head>
+
+  <body>
+    <p>Youtube subscribe button</p>
+    <button onclick="subscribe()
+    "
+    class="js-btn-sub">Subscribe</button>
+    
+    <p>Rock paper scissor</p>
+    <a href="./dom-rock-paper-scissor.html">Click here</a>
+
+
+
+
+    <p>Amazon Shipping Calculator</p>
+    <input 
+    onkeydown="handleCostKeyDown(event)"
+     class="js-cost-input"
+    type="number" placeholder="Cost of order">
+    
+    <button onclick="calculateTotal()"
+    ">Calculate</button>
+    <p class="js-total-cost"></p>
+
+
+    </body>
+    <script>
+      // convert value into string 
+      String(25);
+
+      // automatically convert num 
+      console.log  ('25' - 5);
+    //  adding works differently 
+    console.log('25' + 5);
+    //dont do math using like this use function
+
+      function subscribe(){
+        const btnElement =  (document.querySelector('.js-btn-sub'))
+        if(btnElement.innerText === 'Subscribe'){
+        btnElement.innerHTML = 'Subscribed'
+        }else{
+         btnElement.innerHTML = 'Subscribe'
+    }
+      }
+
+      // onKeyDown Enter cost 
+      function handleCostKeyDown(event){
+        console.log(event.key);
+          if (event.key === 'Enter'){
+          calculateTotal() ;}
+      }
+
+
+      // get the input value frfom textbox
+      // if < Rs. 40, add Rs 10 
+      // displat result
+     
+      function calculateTotal(){
+        const inputElement = document.querySelector('.js-cost-input')
+        let cost = Number(inputElement.value);
+        if (cost < 40){
+          cost += 10;
+
+        }
+        document.querySelector('.js-total-cost').innerHTML = `Rs.${cost}`;
+      } 
+      
+
+    </script>
+    </script>
+  </body>
+</html>

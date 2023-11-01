@@ -1,0 +1,39 @@
+<!-- build in object  -->
+<!-- document object represent or models the webpage  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <button>Yooo</button>
+    <button class="js-button">Hello</button>
+
+    <script>
+      // get element
+      console.log(document.querySelector("button"));
+      document.querySelector("button").innerHTML = "changed";
+      console.log(document.querySelector(".js-button"));
+
+      const buttonElement = document.querySelector(".js-button");
+      console.log(buttonElement);
+      // title in the tabs
+      // console.log(document.title);
+      // document.title = "changed";
+      // console.log(document.title);
+
+      //whole body in html
+      // console.log(document.body); //body is changed into js
+
+      //controls all the html inside the body
+      // console.log(document.body.innerHTML);
+      // console.log((document.body.innerHTML = "changed"));
+      // console.log((document.body.innerHTML = "<button>Hello</button>"));
+
+      /* document.body.innerHTML = "hello";
+      document.title = "dom"; */
+    </script>
+  </body>
+</html>
