@@ -34,8 +34,9 @@ function rendertodoList() {
     const name = todoObject.name;
     const dueDate = todoObject.dueDate;
     const html = `
-    <p>
-    ${name} ${dueDate} 
+
+    <p class="output-list">
+     <span class="name-date">${name} ${dueDate} <span/>  
     <button onClick="
     todoList.splice(${i}, 1);
     rendertodoList();

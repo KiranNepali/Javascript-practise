@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./final-todo.css" />
     <title>Todo List</title>
   </head>
   <body>
-    <div>
+    <div class="add-list">
       <input class="js-input" placeholder="Todo name" />
       <input type="date" class="js-duedate" />
-      <button onclick="addTodo()">Add</button>
-      <div class="js-todo-list"></div>
+      <button onclick="addTodo()" class="add-btn">Add</button>
     </div>
+
+    <div class="js-todo-list"></div>
+
     <!-- js  -->
-    <script src="scripts/final-todo.js"></script>
+    <script src="./final-todo.js"></script>
   </body>
 </html>
